@@ -87,7 +87,12 @@ companion object {
 ```
 But we use package names here as prefix to avoid conflicts between different apps and libraries as used above : const val NAME = "com.example.loginsignupscreen.NAME"
 
+### How data is stored in firebase realtime database
+It is stored in form of JSON objects. When we add user(data) to the JSON tree, it becomes a node in the existing JSON structure with an associated key(username).
+![firebase](https://github.com/puneetchhabra22/User-Registration-Android-App/assets/142248901/312acc2d-e4e3-4a8e-acc7-be240186a760)
+
 ## Future Scope
 - Encrypted passwords
--- Storing password's hash value
-- trimming the input user fields
+  - Storing password's hash value instead of the password itself
+- Trimming leading and trailing the input user fields
+- Making input fields as not case sensitive
